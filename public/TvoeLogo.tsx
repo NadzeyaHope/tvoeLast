@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tvoe() {
+function TvoeLogo() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ function Tvoe() {
     );
 }
 
-export default Tvoe;
+export default TvoeLogo;

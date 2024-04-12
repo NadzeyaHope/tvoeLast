@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bell = () => {
+const BellIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const Bell = () => {
     );
 };
 
-export default Bell;
+export default BellIcon;

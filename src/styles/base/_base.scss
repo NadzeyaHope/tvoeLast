@@ -1,0 +1,17 @@
+@import "./vars";
+
+body {
+  font-family: Rubik, sans-serif;
+  background: $default-color;
+  color : $white;
+
+}
+
+a {
+  color: $white;
+
+  &:hover {
+    color: $secondary-color;
+    transition: color 0.3s ease;
+  }
+}

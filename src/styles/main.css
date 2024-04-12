@@ -1,0 +1,15 @@
+body {
+  font-family: Rubik, sans-serif;
+  background: #09090C;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.3s ease;
+}
+
+/*# sourceMappingURL=main.css.map */
