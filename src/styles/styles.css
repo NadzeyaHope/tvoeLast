@@ -1,0 +1,14 @@
+.button {
+  background-color: #6A11CB;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #2575FC;
+}
+
+/*# sourceMappingURL=styles.css.map */
