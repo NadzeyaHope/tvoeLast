@@ -1,6 +1,12 @@
 $default-color: #09090C;
-$gradient-color: linear-gradient(to right, #6A11CB 100%, #2575FC 100%);
+$gradient-color: linear-gradient(90deg, rgba(106,17,203,1) 15%, rgba(100,25,207,1) 30%, rgba(37,117,252,1) 93%);
 $icon-color: linear-gradient(to right, #FFFFFF 10%, #FFFFFF 12.5%, #FFFFFF 10%);
 $secondary-color: rgba(255, 255, 255, 0.3);
 $white : #fff;
 $primary-color: #6A11CB;
+$button-mark : #2674FB;
+$gradient2-color :  linear-gradient(rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.125),
+        rgba(255, 255, 255, 0.1));
+$button-color: rgba(255, 255, 255, 0.05);
+$text-color : rgba(186, 186, 186, 1);

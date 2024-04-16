@@ -1,9 +1,1 @@
-export default function Home() {
-    return (
-        <>
-            <a>
-                ds
-            </a>
-        </>
-    );
-}
+export { default } from './../widgets/home/Home';

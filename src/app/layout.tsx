@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import './../styles/main.scss';
+import {clsx} from "clsx";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={clsx(rubik.className, 'container') }>{children}</body>
     </html>
   );
 }

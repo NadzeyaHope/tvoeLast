@@ -4,14 +4,24 @@ body {
   font-family: Rubik, sans-serif;
   background: $default-color;
   color : $white;
-
+  margin: auto;
 }
 
 a {
-  color: $white;
+  color: white;
+  transition: color 0.3s ease;
 
   &:hover {
     color: $secondary-color;
-    transition: color 0.3s ease;
   }
+}
+.button-mark {
+  background: $button-mark;
+  border-radius: 8px;
+  padding: 5px 8px 5px 8px;
+  font-size: 18px;
+  line-height: 23px;
+}
+.spacer {
+  height: 8px;
 }
