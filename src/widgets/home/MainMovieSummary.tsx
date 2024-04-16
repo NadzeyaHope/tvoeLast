@@ -3,21 +3,20 @@ import Image from "next/image";
 import MainMovieData from "@/widgets/home/MainMovieData";
 import MainMovieLinks from "@/widgets/home/MainMovieLinks";
 import Container from "@/shared/Container";
+import Spacer from "@/shared/Spacer";
 
 const MainMovieSummary = () => {
     return (
             <div className={'mainMovieSummary'}>
                 <div className={'image-gradient'}/>
-                <Container>
                     <div className={'mainMovieSummaryTitle'}>
                         <Image className={'mainMovieName'} height={101} width={338} src={'/legendOfAvatar.png'}
                                alt={'legendOfAvatar'}/>
-                        <div className={'spacer'}/>
+                        <Spacer height={'8px'}/>
                         <MainMovieData/>
-                        <div className={'spacer'}/>
+                        <Spacer height={'8px'}/>
                         <MainMovieLinks/>
                     </div>
-                </Container>
             </div>
     );
 };

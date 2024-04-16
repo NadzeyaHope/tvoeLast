@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Rubik, sans-serif;
   background: #09090C;
@@ -21,24 +22,25 @@ a:hover {
   line-height: 23px;
 }
 
-.spacer {
-  height: 8px;
-}
-
 .header {
   display: flex;
-  padding-top: 11px;
+  padding: 11px 32px 0 0;
   align-items: center;
-  width: 960px;
-  justify-content: space-between;
   margin-bottom: 20px;
+}
+.header__tvoe-logo {
+  width: 144px;
+  margin-right: 32px;
 }
 
 .button-header-7days {
   background: linear-gradient(90deg, rgb(106, 17, 203) 20%, rgb(100, 25, 207) 30%, rgb(37, 117, 252) 93%);
   color: #fff;
+  width: 129px;
   border-radius: 12px;
+  text-align: center;
   padding: 10px 16px 10px 16px;
+  margin-left: 8px;
 }
 
 .button-promo {
@@ -58,7 +60,6 @@ a:hover {
 
 .search {
   position: relative;
-  width: 379px;
   height: 68px;
   display: flex;
   align-items: center;
@@ -74,7 +75,7 @@ a:hover {
   position: absolute;
   z-index: 30;
   margin-top: 36px;
-  margin-left: 395px;
+  margin-left: 300px;
   transform: translateY(-50%);
 }
 
@@ -139,10 +140,52 @@ a:hover {
 
 .container {
   max-width: 960px;
+  padding-left: 32px;
 }
-.container div {
-  padding-left: 8px;
-  padding-right: 8px;
+
+.moviesNew {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden; /* Включаем горизонтальный скролл */
+  white-space: nowrap;
+}
+
+.movie-card {
+  position: relative;
+  display: inline-block;
+  width: 216px; /* Ширина одной карточки */
+  height: 386px; /* Высота одной карточки */
+  margin-right: 12px; /* Отступ между карточками */
+  border-radius: 8px;
+}
+.movie-card__image {
+  border-radius: 24px 24px 0 0;
+  width: 216px;
+  height: 324px;
+  object-fit: cover;
+}
+.movie-card__title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 350;
+}
+.movie-card__duration {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+}
+.movie-card__rating {
+  position: absolute;
+  background: rgb(38, 116, 251);
+  color: #FFFFFF;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 5px 8px 5px 8px;
+  margin-top: 16px;
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

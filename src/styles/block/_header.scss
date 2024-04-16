@@ -1,16 +1,23 @@
+@import './../base/vars';
 .header {
   display: flex;
-  padding-top: 11px;
+  padding: 11px 32px 0 0;
   align-items: center;
-  width: 960px;
-  justify-content: space-between;
   margin-bottom: 20px;
+
+  &__tvoe-logo{
+    width: 144px;
+    margin-right: 32px;
+  }
 }
 .button-header-7days {
   background: linear-gradient(90deg, rgba(106,17,203,1) 20%, rgba(100,25,207,1) 30%, rgba(37,117,252,1) 93%);
   color: $white;
+  width: 129px;
   border-radius: 12px;
+  text-align: center;
   padding: 10px 16px 10px 16px;
+  margin-left: 8px;
 }
 .button-promo {
   background: $button-color;
@@ -27,7 +34,6 @@
 }
 .search {
   position: relative;
-  width: 379px;
   height: 68px;
   display: flex;
   align-items: center;
@@ -42,6 +48,6 @@
   position: absolute;
   z-index: 30;
   margin-top: 36px;
-  margin-left: 395px;
+  margin-left: 300px;
   transform: translateY(-50%);
 }

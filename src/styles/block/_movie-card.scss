@@ -1,0 +1,48 @@
+.moviesNew {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden; /* Включаем горизонтальный скролл */
+  white-space: nowrap;
+}
+.movie-card {
+  position: relative;
+  display: inline-block;
+  width: 216px; /* Ширина одной карточки */
+  height: 386px; /* Высота одной карточки */
+  margin-right: 12px; /* Отступ между карточками */
+  border-radius: 8px;
+
+  &__image {
+    border-radius: 24px 24px 0 0;
+    width: 216px;
+    height: 324px;
+    object-fit: cover;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 350;
+  }
+
+  &__duration {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+
+  &__rating {
+    position: absolute;
+    background: rgba(38, 116, 251, 1);
+    color: #FFFFFF;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 5px 8px 5px 8px;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+}
