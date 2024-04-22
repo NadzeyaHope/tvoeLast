@@ -1,0 +1,65 @@
+@import 'src/styles/base/vars';
+$white-shadow: rgba(255, 255, 255, 0.01);
+
+.subscription {
+  position: relative;
+  border-radius: 24px;
+  background: $default-color;
+  height: 320px;
+  display: flex;
+  width: 896px;
+  $offset-x: 0px;
+  $offset-y: 0px;
+  $blur: 18px;
+  $spread: 0px;
+  box-shadow: $offset-x $offset-y $blur $spread rgba(255, 255, 255, 0.25) inset;
+
+  &__image {
+    position: absolute;
+    padding-left: 284px;
+    border-radius: 24px;
+  }
+
+  &__widgets {
+    padding-left: 40px;
+    width: 510px;
+
+
+    &__subtitle {
+      display: flex;
+    }
+
+    &__button-gradient {
+      background: $gradient-color;
+      border-radius: 12px;
+      line-height: 24px;
+      font-size: 16px;
+      padding: 12px 0 12px 0;
+      font-weight: 300;
+      text-align: center;
+      width: 209px;
+    }
+
+
+    &__title {
+      padding-top: 40px;
+      font-weight: 700;
+      font-size: 39px;
+      line-height: 33.6px;
+      margin: 0;
+    }
+
+  }
+
+
+}
+.advantages {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 19.17px;
+  font-size: 16px;
+  height: 19px;
+  font-weight: 300;
+}

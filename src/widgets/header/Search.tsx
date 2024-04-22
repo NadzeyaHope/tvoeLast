@@ -4,22 +4,27 @@ import SearchIcon from "../../../public/header/Search";
 
 const Search = () => {
     const [searchText, setSearchText] = useState("");
-    const onSearch = (e) => {
+
+    const onSearch = (e: string) => {
         setSearchText(e);
     }
-    const onChange = (e) => {
+
+
+    const onChange = (e: any) => {
         setSearchText(e.target.value);
     }
+
+
     return (
-        <div style={{display : 'flex'}} >
+        <div style={{display: 'flex'}}>
             <input
-                className={'search'}
+                className={'header__search'}
                 onClick={(e) => {
                     onChange(e)
                 }}
 
             />
-            <i className="icon"><SearchIcon/></i>
+            <i className="header__icon"><SearchIcon/></i>
         </div>
     );
 };

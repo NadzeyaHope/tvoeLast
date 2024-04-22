@@ -1,13 +1,16 @@
+
 import React from 'react';
 import {truncateString} from "@/api/api";
 import Spacer from "@/shared/Spacer";
+import './_movie-card.scss';
 
 interface MovieCardProps {
     title: string;
     duration: string;
-    rating: number;
+    rating: string;
     imageSrc: string;
 }
+
 
 
 const MovieCard: React.FC<MovieCardProps> = ({ title, duration, rating, imageSrc }) => {

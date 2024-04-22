@@ -1,0 +1,39 @@
+.top-movies {
+  padding-left: 32px;
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 33.6px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+}
+.top-movies-card {
+  width: 329px;
+  margin-right: 20px;
+
+  &__top {
+    position: absolute;
+    z-index: -1;
+    padding-top: 120px;
+  }
+
+
+  &__image-space {
+    padding-left: 92px;
+    position: relative;
+  }
+
+
+  &__image {
+    width: 246px;
+    height: 370px;
+  }
+
+
+
+}

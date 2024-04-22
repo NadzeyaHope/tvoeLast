@@ -5,6 +5,7 @@ body {
   background: $default-color;
   color : $white;
   margin: auto;
+  max-width: 960px;
 }
 
 a {
@@ -21,4 +22,11 @@ a {
   padding: 5px 8px 5px 8px;
   font-size: 18px;
   line-height: 23px;
+}
+.button-gradient {
+  background: $gradient-color;
+  border-radius: 12px;
+  padding: 10px 16px 10px 26px;
+  line-height: 20px;
+  font-size: 16px;
 }

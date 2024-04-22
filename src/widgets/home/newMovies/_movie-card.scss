@@ -1,16 +1,22 @@
-.moviesNew {
-  display: flex;
-  width: 100%;
-  overflow-x: hidden; /* Включаем горизонтальный скролл */
-  white-space: nowrap;
+.movies-new {
+  padding-left: 32px;
 }
 .movie-card {
   position: relative;
   display: inline-block;
   width: 216px; /* Ширина одной карточки */
   height: 386px; /* Высота одной карточки */
-  margin-right: 12px; /* Отступ между карточками */
   border-radius: 8px;
+  margin-right: 24px;
+
+  &__block-name {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 24px;
+    margin-top : 64px;
+    margin-bottom: 20px;
+  }
+
 
   &__image {
     border-radius: 24px 24px 0 0;
