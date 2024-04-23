@@ -1,0 +1,31 @@
+$button-bg-color: #4CAF50; // Green background color
+$button-text-color: #FFFFFF; // White text color
+$button-border-radius: 5px; // Border radius
+$button-padding: 10px 20px; // Padding
+
+.next-button {
+  // Button styles
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  border: none;
+  border-radius: $button-border-radius;
+  padding: $button-padding;
+  font-size: 16px;
+  cursor: pointer;
+
+  // Hover effect
+  &:hover {
+    background-color: darken($button-bg-color, 10%);
+  }
+
+  // Focus effect
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  // Active effect
+  &:active {
+    background-color: lighten($button-bg-color, 10%);
+  }
+}

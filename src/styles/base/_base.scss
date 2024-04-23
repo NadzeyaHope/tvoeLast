@@ -30,3 +30,64 @@ a {
   line-height: 20px;
   font-size: 16px;
 }
+
+
+@mixin button-styles-gradient{
+background: linear-gradient(90deg, rgba(106, 17, 203, 1) 15%, rgba(100, 25, 207, 1) 30%, rgba(37, 117, 252, 1) 93%);
+cursor: pointer;
+
+&:hover {
+  background: darken(#6200EE, 10%);; /* Изменяем цвет фона при наведении */
+}
+
+
+&:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3); /* Добавляем эффект фокуса */
+} }
+
+@mixin button-styles{
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#3F3F46, 10%);; /* Изменяем цвет фона при наведении */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3); /* Добавляем эффект фокуса */
+  }
+}
+
+@mixin button-styles-text-color{
+
+  cursor: pointer;
+
+  &:hover {
+    color: darken(#9595a1, 10%);; /* Изменяем цвет фона при наведении */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3); /* Добавляем эффект фокуса */
+  }
+}
+
+@mixin button-styles-icon{
+  cursor: pointer;
+
+  &:hover {
+    background: darken(#676971, 10%);; /* Изменяем цвет фона при наведении */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3); /* Добавляем эффект фокуса */
+  }
+
+}
+
+@mixin text-md{
+  font-size: 16px;
+  line-height: 19.17px;
+}
