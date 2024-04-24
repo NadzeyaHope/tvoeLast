@@ -8,6 +8,7 @@ const BookmarkIcon = () => {
             width="24"
             fill="none"
             viewBox="0 0 16 20"
+            style={{margin : '5px 0 0 0'}}
         >
             <path
                 fill="#BABABA"

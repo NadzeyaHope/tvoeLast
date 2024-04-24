@@ -1,49 +1,60 @@
 @import '../../styles/base/vars';
 @import 'src/styles/base/base';
+
 .header {
-  margin-top: 11.5px;
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
-  color: $white;
   gap: 16px;
 
-  &__tvoe-logo{
+  &__logo {
     width: 144px;
   }
 
 
-  &__button-gradient {
-    @include button-styles-gradient;
-    border-radius: 12px;
-    padding: 10px 16px 10px 26px;
-    line-height: 20px;
-    font-size: 16px;
+  &__buttons {
+    display: flex;
+    gap: 16px;
+
+
+    &__gradient {
+      @extend %button-styles-gradient;
+      border-radius: 12px;
+      padding: 10px 16px 10px 16px;
+      line-height: 20px;
+      width: 130px;
+      font-size: 16px;
+    }
+
+
+    &__promo {
+      @extend %button-styles;
+      background: $button-color;
+      border-radius: 12px;
+      padding: 10px 16px 10px 16px;
+      line-height: 20px;
+      font-size: 16px;
+    }
+
+
+    &__login {
+      @extend %button-styles-text-color;
+      color: $text-color;
+      border-radius: 12px;
+      font-size: 24px;
+      line-height: 30px;
+      margin: auto;
+    }
   }
+}
 
-
-  &__button-promo {
-    @include button-styles;
-    background: $button-color;
-    border-radius: 12px;
-    padding: 10px 16px 10px 16px;
-  }
-
-
-  &__button-login {
-    @include button-styles-text-color;
-    color: $text-color;
-    border-radius: 12px;
-    font-size: 24px;
-    line-height: 30px;
-    margin: auto;
-  }
+.search-block {
+  display: flex;
 
   &__search {
-    margin-left: 16px;
+    width: 379px;
     position: relative;
     height: 68px;
     display: flex;
@@ -54,12 +65,13 @@
     color: $text-color;
     font-size: 23px;
     padding: 0 40px 0 10px;
-  }
-  &__icon {
-    position: absolute;
-    z-index: 30;
-    margin-top: 36px;
-    margin-left: 300px;
-    transform: translateY(-50%);
+
+    &__icon {
+      position: absolute;
+      z-index: 30;
+      margin-top: 36px;
+      margin-left: 340px;
+      transform: translateY(-50%);
+    }
   }
 }

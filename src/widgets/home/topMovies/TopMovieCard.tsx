@@ -3,7 +3,7 @@ import './_topMovies.scss';
 
 interface TopMovieCard {
     top: string;
-    key: number;
+    key: string;
     alt: string;
     image: string;
 }

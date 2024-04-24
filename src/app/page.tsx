@@ -5,14 +5,12 @@ import NewMovies from "@/widgets/home/newMovies/NewMovies";
 import MainCarusel from "@/widgets/home/mainCover/MainCarusel";
 import SubscriptionBlock from "@/widgets/home/subscription/SubscriptionBlock";
 import TopMovies from "@/widgets/home/topMovies/TopMovies";
-import ButtonNext from "@/shared/ButtonNext";
 import Footer from "@/widgets/footer/Footer";
 
 
 const Home = () => {
     return (
         <div>
-            <Header/>
             <MainCarusel/>
             <Spacer height={'20px'}/>
             <NewMovies/>
@@ -21,7 +19,6 @@ const Home = () => {
             <Spacer height={'64px'}/>
             <TopMovies/>
             <Spacer height={'64px'}/>
-            <Footer/>
         </div>
     );
 };

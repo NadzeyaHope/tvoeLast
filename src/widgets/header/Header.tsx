@@ -4,19 +4,22 @@ import Search from "@/widgets/header/Search";
 import Button from "@/shared/Button";
 import './_header.scss';
 import Container from "@/shared/Container";
+import Spacer from "@/shared/Spacer";
 
 const Header = () => {
     return (
         <Container>
+            <Spacer height={'20px'}/>
             <div className={'header'}>
-                <div className={'header__tvoe-logo'}><TvoeLogo/></div>
+                <div className={'header__logo'}><TvoeLogo/></div>
                 <Search/>
-                <div style={{display: 'flex', gap: '8px'}}>
-                    <Button className={'header__button-gradient'}>7 дней за 0 ₽</Button>
-                    <Button className={'header__button-promo'}>Промокод</Button>
-                    <Button className={'header__button-login'}>Войти</Button>
+                <div className={'header__buttons'} >
+                    <Button className={'header__buttons__gradient'}>7 дней за 0 ₽</Button>
+                    <Button className={'header__buttons__promo'}>Промокод</Button>
+                    <Button className={'header__buttons__login'}>Войти</Button>
                 </div>
             </div>
+            <Spacer height={'4px'}/>
         </Container>
     );
 };

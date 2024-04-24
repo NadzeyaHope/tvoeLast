@@ -6,6 +6,7 @@ body {
   color : $white;
   margin: auto;
   max-width: 960px;
+  padding: 0;
 }
 
 a {
@@ -16,6 +17,13 @@ a {
     color: $secondary-color;
   }
 }
+
+button {
+  color: white;
+  border: none;
+  background: none;
+}
+
 .button-mark {
   background: $button-mark;
   border-radius: 8px;
@@ -23,16 +31,10 @@ a {
   font-size: 18px;
   line-height: 23px;
 }
-.button-gradient {
-  background: $gradient-color;
-  border-radius: 12px;
-  padding: 10px 16px 10px 26px;
-  line-height: 20px;
-  font-size: 16px;
-}
 
 
-@mixin button-styles-gradient{
+
+%button-styles-gradient{
 background: linear-gradient(90deg, rgba(106, 17, 203, 1) 15%, rgba(100, 25, 207, 1) 30%, rgba(37, 117, 252, 1) 93%);
 cursor: pointer;
 
@@ -46,7 +48,7 @@ cursor: pointer;
   box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3); /* Добавляем эффект фокуса */
 } }
 
-@mixin button-styles{
+%button-styles{
   cursor: pointer;
 
   &:hover {
@@ -59,7 +61,7 @@ cursor: pointer;
   }
 }
 
-@mixin button-styles-text-color{
+%button-styles-text-color{
 
   cursor: pointer;
 
@@ -73,7 +75,7 @@ cursor: pointer;
   }
 }
 
-@mixin button-styles-icon{
+%button-styles-icon{
   cursor: pointer;
 
   &:hover {
@@ -87,7 +89,7 @@ cursor: pointer;
 
 }
 
-@mixin text-md{
+%text-md{
   font-size: 16px;
   line-height: 19.17px;
 }

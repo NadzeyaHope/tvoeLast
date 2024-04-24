@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import {useRouter} from "next/navigation";
 
 interface Props {
     children : string;
@@ -6,11 +8,11 @@ interface Props {
 }
 
 const Button = (props : Props) => {
-    const { children, className } = props;
+    const { children, className} = props;
     return (
-        <div className={className} >
+        <button className={className} >
             {children}
-        </div>
+        </button>
     );
 };
 

@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   &__button-support {
-    @include button-styles;
+    @extend %button-styles;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     width: 202px;
@@ -25,7 +25,7 @@
     display: flex;
     gap: 8px;
     align-items: center;
-    @include button-styles-text-color;
+    @extend %button-styles-text-color;
     font-size: 16px;
     line-height: 19.17px;
     font-weight: 400;
@@ -41,9 +41,9 @@
 
   &__link {
     font-weight: 400;
-    @include text-md;
+    @extend %text-md;
     color: $link-color;
-    @include button-styles-text-color;
+    @extend %button-styles-text-color;
   }
 }
 .label-footer {
@@ -54,7 +54,7 @@
   &__info {
     max-width: 237px;
     margin: 0;
-    @include text-md;
+    @extend %text-md;
     font-weight: 300;
     color : $secondary-color;
   }

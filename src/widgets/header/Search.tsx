@@ -16,15 +16,15 @@ const Search = () => {
 
 
     return (
-        <div style={{display: 'flex'}}>
+        <div className={'search-block'}>
             <input
-                className={'header__search'}
+                className={'search-block__search'}
                 onClick={(e) => {
                     onChange(e)
                 }}
 
             />
-            <i className="header__icon"><SearchIcon/></i>
+            <i className="search-block__search__icon"><SearchIcon/></i>
         </div>
     );
 };

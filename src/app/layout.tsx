@@ -3,6 +3,9 @@ import {Rubik} from "next/font/google";
 import "./globals.css";
 import './../styles/styles.scss';
 import React from "react";
+import Header from "@/widgets/header/Header";
+import Footer from "@/widgets/footer/Footer";
+import Spacer from "@/shared/Spacer";
 
 const rubik = Rubik({subsets: ["latin"]});
 
@@ -19,7 +22,10 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={(rubik.className)}>
+        <Header/>
+        <Spacer height={'4px'}/>
         {children}
+        <Footer/>
         </body>
         </html>
     );
