@@ -1,0 +1,150 @@
+.movie-data {
+  margin-left: 34px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.seasons-container {
+  display: flex;
+  font-size: 24px;
+  line-height: 30.72px;
+  font-weight: 300;
+  color : rgba(255, 255, 255, 0.3);
+  gap: 24px;
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  &__card {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+  &__image {
+    border-radius: 20px;
+  }
+
+
+    &__number-episode {
+      font-size: 20px;
+      line-height: 25.6px;
+      font-weight: 300;
+    }
+
+    &__done {
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 20.48px;
+      color: rgba(186, 186, 186, 1);
+    }
+
+  }
+
+}
+.active {
+  color: #FFFFFF;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__nav {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+    line-height: 30.72px;
+    font-weight: 300;
+    color : rgba(255, 255, 255, 0.3);
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20.48px;
+    font-weight: 300;
+  }
+
+  &__danger {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__danger-text {
+    font-size: 16px;
+    line-height: 20.48px;
+    font-weight: 300;
+    color : rgba(75, 75, 75, 1);
+
+  }
+}
+.rating {
+  display: flex;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 200;
+  gap: 14px;
+
+  &__mark {
+    color: rgba(188, 136, 255, 1);}
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__title {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__card {
+    width: 400px;
+    padding: 28px 32px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05) ;
+    margin-right: 12px;
+    border-radius: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 200;
+    gap: 12px;
+
+    &__main {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__rating {
+    width: 40px;
+    height: 30px;
+    background: #2674FB;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 4px;
+
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+}
